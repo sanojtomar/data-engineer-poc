@@ -7,7 +7,7 @@
    2. requests
    3. PostgreSQL Instance
 
-### Steps
+### Task 1: 
 1. Create a database/schema on PostgreSQL instance
 2. Create 3 tables (Scripts are given --> sql/ddl)
    1. users
@@ -22,11 +22,16 @@
     user=USER_NAME_HERE
     password=ENTER_PASSWORD_HERE
 
-### How to run [Windows]
+#### How to run [Windows]
 Command: python main.py
 1. Manually: Navigate to code directory with command prompt (CMD) and run the command 
 2. Schedule: Same command can be scheduled in windows task scheduler
 
+### Task 2: SQL Queries for data analysis
+   Check the folder sql/queries
+
 ### Note:
 I could have done this task with Azure data factory/data bricks or spark, 
 however I wanted to develop the task with Python and SQL only as mentioned in the document.
+
+
