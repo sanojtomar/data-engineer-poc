@@ -26,14 +26,22 @@ where  s.userid is NULL
 -- *** birthdate is recent dates, these are invalid dates ***
 -- *** how a new born can come to app and sent the messages? ***
 select birthdate from users u ;
--- SOLUTION:
 
--- *** there are cases where subscription  createddt are after startdate
+-- *** there are few records where subscription  createddt are after startdate
 select * from subscriptions s where s.createdat > s.startdate ;
 
 -- *** there is user who has sent messages without subscription
 select distinct m.senderid from messages m left join subscriptions s  on m.senderid = s.userid
 where  s.userid is NULL
+
+-- Solution for inaccurate/noisy data:
+   -- It varies case to case
+   -- We are seeing recent dates for birthdate, that is for all users so we should notify this to data provider
+   -- For subscription date issue, current data is very less; we can collect more data and then think the solution
+            -- It is sure that in ideal case, createdt should be eariler or equal to startdate so we can update createdt same as startdate
+            -- If lots of data is coming with same kind of inaccuracy then it can be escalated to the data provider
+    -- Issue related to sending message without the subscription, it can be a business use case
+        -- or the data itself can be inaccurate.. if data is too less it can be ignored/deleted
 
 
 
