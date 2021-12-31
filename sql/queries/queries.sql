@@ -17,7 +17,7 @@ select * from subscriptions s where s.status  = 'Active' and s.startdate <= CURR
 
 -- Are there users sending messages without an active subscription? 
 select distinct m.senderid from messages m left join subscriptions s  on m.senderid = s.userid
-where s.userid is NULL
+where  s.userid is NULL
 
 -- Did you identified any inaccurate/noisy record that somehow could prejudice the data analyses? 
 -- How to monitor it (SQL query)? Please explain how do you suggest to handle with this noisy data?

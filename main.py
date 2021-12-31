@@ -5,8 +5,11 @@ from datetime import datetime
 
 if __name__ == '__main__':
 
+    # print('staring the ETL now')
+
     RAW_FOLDER_PATH = "data/processed/"
 
+    print('Processing users and subscriptions')
     filepath = RAW_FOLDER_PATH + "users/%s.json" % (datetime.today().strftime('%Y-%m-%d'))
     url = "https://619ca0ea68ebaa001753c9b0.mockapi.io/evaluation/dataengineer/jr/v1/users"
     processor = UserProcessor()
@@ -15,6 +18,7 @@ if __name__ == '__main__':
     else:
         print('error while processing users and subscriptions')
 
+    print('Processing messages')
     filepath = RAW_FOLDER_PATH + "messages/%s.json" % (datetime.today().strftime('%Y-%m-%d'))
     url = "https://619ca0ea68ebaa001753c9b0.mockapi.io/evaluation/dataengineer/jr/v1/messages"
     processor = MessageProcessor()
