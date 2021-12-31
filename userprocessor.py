@@ -73,9 +73,8 @@ class UserProcessor:
 
     def save_subscriptions(self, data):
         table_name = 'subscriptions'
-        columns = Utility.generate_columns(data)
-
         if data:
+            columns = Utility.generate_columns(data)
             for record in data:
                 # delete all subscriptions for a user
                 sql_string = "delete from subscriptions where userid = %s" % (record['userid'])
