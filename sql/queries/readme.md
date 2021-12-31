@@ -20,13 +20,13 @@ How to monitor it (SQL query)? Please explain how do you suggest to handle with 
 
     select birthdate from users u ;
 
-#### there are few records where subscription  createddt are after startdate
+#### 2. there are few records where subscription  createddt are after startdate
     select * from subscriptions s where s.createdat > s.startdate ;
 
-#### there is user who has sent messages without subscription
+#### 3. there is user who has sent messages without subscription
     select distinct m.senderid from messages m left join subscriptions s  on m.senderid = s.userid where  s.userid is NULL
 
-#### Solution for inaccurate/noisy data:
+### Solution for inaccurate/noisy data:
    1. It varies case to case
    2. We are seeing recent dates for birthdate, that is for all users so we should notify this to data provider 
    3. For subscription date issue, current data is very less; we can collect more data and then think the solution 
