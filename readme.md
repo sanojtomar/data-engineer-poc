@@ -30,7 +30,8 @@
 2. Schedule: Same command can be scheduled in windows task scheduler
 
 ### Task 2: SQL Queries for data analysis
-   Check the folder sql/queries
+[Check the folder sql/queries ](https://github.com/sanojtomar/data-engineer-spark-networks/tree/master/sql/queries#how-many-total-messages-are-being-sent-every-day)
+    
 
 ### Note:
 I could have done this task with Azure data factory/data bricks or spark, 
