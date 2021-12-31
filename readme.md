@@ -5,6 +5,7 @@
 1.Install python 3.x and below 2 packages:
    1. psycopg2
    2. requests 
+   3. json (if already not installed)
 
 2.PostgreSQL Instance and client tool to connect (like DBeaver)
 
