@@ -4,8 +4,9 @@
 ### Prerequisites
 1.Install python 3.x and below 2 packages:
    1. psycopg2
-   2. requests
-   3. PostgreSQL Instance
+   2. requests 
+
+2.PostgreSQL Instance and client tool to connect (like DBeaver)
 
 ### Task 1: 
 1. Create a database/schema on PostgreSQL instance
@@ -22,8 +23,8 @@
     user=USER_NAME_HERE
     password=ENTER_PASSWORD_HERE
 
-#### How to run [Windows]
-Command: python main.py
+### How to run [Windows]
+#### Command: python main.py
 1. Manually: Navigate to code directory with command prompt (CMD) and run the command 
 2. Schedule: Same command can be scheduled in windows task scheduler
 
