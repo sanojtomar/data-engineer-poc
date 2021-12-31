@@ -17,11 +17,11 @@
 3. Clone this repository files to a desired location/server
 4. Create a database config file (database.ini) or update existing one with database connection setting:
   
-    [postgresql]
-    host=HOST_URL_OR_IP_HERE
-    database=DATABASE_NAME_HERE
-    user=USER_NAME_HERE
-    password=ENTER_PASSWORD_HERE
+    [postgresql]<br />
+    host=HOST_URL_OR_IP_HERE<br />
+    database=DATABASE_NAME_HERE<br />
+    user=USER_NAME_HERE<br />
+    password=ENTER_PASSWORD_HERE<br />
 
 ### How to run [Windows]
 #### Command: python main.py
