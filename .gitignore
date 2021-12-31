@@ -4,6 +4,7 @@
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
+
 database.ini
 
 __pycache__/
