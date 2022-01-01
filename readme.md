@@ -11,7 +11,7 @@
 
 ### Task 1: 
 1. Create a database/schema on PostgreSQL instance
-2. Create 3 tables ([Scripts are given --> sql/ddl](https://github.com/sanojtomar/data-engineer-spark-networks/tree/master/sql/ddl))
+2. Create 3 tables ([Check the folder for Scripts: sql/ddl](https://github.com/sanojtomar/data-engineer-spark-networks/tree/master/sql/ddl))
    1. users
    2. subscriptions
    3. messages
@@ -30,11 +30,11 @@
 2. Schedule: Same command can be scheduled in windows task scheduler
 
 ### Task 2: SQL Queries for data analysis
-[Check the folder sql/queries](https://github.com/sanojtomar/data-engineer-spark-networks/tree/master/sql/queries)
+[Check the folder for queries: sql/queries](https://github.com/sanojtomar/data-engineer-spark-networks/tree/master/sql/queries)
     
 
 ### Note:
-I could have done this task with Azure data factory/data bricks or spark, 
-however I wanted to develop the task with Python and SQL only as mentioned in the document.
+I could have done this task with Azure data factory/data bricks/spark, 
+however I have developed the task with Python and SQL only as mentioned in the requirement document.
 
 
