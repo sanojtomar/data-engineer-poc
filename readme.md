@@ -11,7 +11,7 @@
 
 ### Task 1: 
 1. Create a database/schema on PostgreSQL instance
-2. Create 3 tables (Scripts are given --> sql/ddl)
+2. Create 3 tables ([Scripts are given --> sql/ddl](https://github.com/sanojtomar/data-engineer-spark-networks/tree/master/sql/ddl))
    1. users
    2. subscriptions
    3. messages
@@ -30,7 +30,7 @@
 2. Schedule: Same command can be scheduled in windows task scheduler
 
 ### Task 2: SQL Queries for data analysis
-[Check the folder sql/queries ](https://github.com/sanojtomar/data-engineer-spark-networks/tree/master/sql/queries#how-many-total-messages-are-being-sent-every-day)
+[Check the folder sql/queries](https://github.com/sanojtomar/data-engineer-spark-networks/tree/master/sql/queries)
     
 
 ### Note:
